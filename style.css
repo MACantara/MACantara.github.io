@@ -9,6 +9,8 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    align-content: center;
+    vertical-align: middle;
   }
 .resize {
     width: 20%;
