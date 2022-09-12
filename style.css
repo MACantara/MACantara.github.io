@@ -12,11 +12,12 @@ li a {
     text-decoration: none;
 }
 li a:hover {
-    background-color: #111;
+    background-color: #1978d1;
 }
-.menu {
+.nav {
     list-style-type: none;
-    margin: 0;
+    margin: -8px;
+    margin-bottom: 2px;
     padding: 0;
     display: flex;
     overflow: hidden;
@@ -25,9 +26,16 @@ li a:hover {
     align-items: center;
     align-content: center;
     vertical-align: middle;
-    background-color: #333;
+    background-color: #145da0;
   }
 .resize {
     width: 20%;
     height: 20%;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-decoration: none;
+    justify-content: flex-start;
 }
