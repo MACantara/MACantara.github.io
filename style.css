@@ -1,9 +1,12 @@
 body {
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
+
 li {
     float: right;
 }
+
 li a {
     display: block;
     color: white;
@@ -11,9 +14,19 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
+
 li a:hover {
     background-color: #1978d1;
 }
+
+img {
+    width: 250px;
+    height: 250px;
+    border: 5px solid #1978d1;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
 .nav {
     list-style-type: none;
     margin: -8px;
@@ -28,14 +41,31 @@ li a:hover {
     vertical-align: middle;
     background-color: #145da0;
   }
-.resize {
-    width: 20%;
-    height: 20%;
+
+.personal-information {
+    margin-left: 15px;
 }
-.logo {
-    display: flex;
-    flex-direction: row;
-    color: white;
-    text-decoration: none;
-    justify-content: flex-start;
+
+.roll_over {
+    height: 45px;
+    width: 45px;
+    margin-top: 15px;
+    display: inline-block;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+
+.roll_over:hover {
+    background-position: 0px -5px;
+}
+
+.facebook {
+    background-image:url('https://img.icons8.com/color/48/1A1A1A/facebook.png');
+}
+
+.instagram {
+    background-image:url('https://img.icons8.com/color/48/000000/instagram-new--v1.png');
 }
