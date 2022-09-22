@@ -74,3 +74,9 @@ label {
 .instagram {
     background-image:url('https://img.icons8.com/color/48/000000/instagram-new--v1.png');
 }
+
+.contact-form {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
