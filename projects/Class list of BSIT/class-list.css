@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #D6D5C9;
+}
+
+table {
+    margin: auto;
+    border: 2px solid black;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
