@@ -1,0 +1,48 @@
+body {
+    background-color: #921000;
+    color: #f9cc01;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0 1.5rem;
+  }
+  
+  h1 {
+    max-width: 550px;
+    margin: 15px auto;
+    min-width: 200px;
+  }
+  
+  p {
+    text-align: justify;
+    margin: 15px auto;
+    max-width: 500px;
+    min-width: 200px;
+  }
+  
+  input {
+    margin: 15px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    max-width: 500px;
+    min-width: 200px;
+  }
+  
+  fieldset {
+    border: none;
+  }
+  
+  select {
+    margin: 15px;
+    width: 100%;
+    max-width: 500px;
+    padding: 5px;
+    text-align: left;
+    position: relative;
+    min-width: 200px;
+  }
+  
+  input[type=radio] {
+    margin: 15px;
+    padding: 15px;
+  }

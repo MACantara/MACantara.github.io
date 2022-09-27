@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Perpetual Help DALTA Molino Campus Online Enrollment Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="title">University of Perpetual Help System DALTA Molino Campus Online Enrollment Form</h1>
+    <p id="description">
+      Welcome to the University of Perpetual Help System DALTA Molino Campus! Thank you for choosing our university for your child's education. Kindly fill up the form with the appropriate information about your child.
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name: </label>
+        <br>
+        <input id="name" type="text" placeholder="Juan de la Cruz" required>
+        <br>
+        <label id="email-label" for="email">Email: </label>
+        <br>
+        <input id="email" type="email" placeholder="example@email.com" required>
+        <br>
+        <label id="number-label" for="contact-number">Contact Number: </label>
+        <br>
+        <input id="number" type="number" min="4" max="12" placeholder="123456789012" required>
+        <br>
+        <label id="courses-label" for="courses">Courses: </label>
+        <br>
+        <select id="dropdown" required>
+          <option value="">(Select Course)</option>
+          <optgroup label="Architecture">
+            <option value="bs-in-architecture">BS in Architecture</option>
+          </optgroup>
+          <optgroup label="Arts and Sciences">
+            <option value="ab-in-communication">AB in Communications</option>
+            <option value="ab-in-multimedia-arts">AB in Multimedia Arts</option>
+            <option value="ab-in-political-science">AB in Political Science</option>
+            <option value="ab-in-psychology">AB in Psychology</option>
+            <option value="bs-in-psychology">BS in Psychology</option>
+          </optgroup>
+          <optgroup label="Aviation">
+            <option value="aircraft-maintenance-technology">Aircraft Maintenance Technology</option>
+            <option value="aviation-electronics-technology">Aviation Electronics Technology</option>
+            <option value="bs-in-aircraft-maintenance-technology">BS in Aircraft Maintenance Technology</option>
+            <option value="bs-in-aviation-electrocnis-technology">BS in Aviation Electronics Technology</option>
+            <option value="commercial-pilot-license-course">Commercial Pilot License Course</option>
+            <option value="flight-instructor-course">Flight Instructor Course</option>
+            <option value="private-pilot-license-course">Private Pilot License Course</option>
+          </optgroup>
+          <optgroup label="Business">
+            <option value="bs-in-accountancy">BS in Accountancy</option>
+            <option value="bs-in-business-administration-major-in-human-resource-management">BS in Business Administration Major in Human Resource Management</option>
+            <option value="bs-in-business-administration-major-in-marketing-management">BS in Business Adminstration Major in Marketing Management</option>
+            <option value="bs-in-customs-adminstration">BS in Customs Adminstration</option>
+            <option value="bs-in-entrepreneurship">BS in Entrepreneurship</option>
+          </optgroup>
+          <optgroup label="Criminology">
+            <option value="bs-in-criminology">BS in Criminology</option>
+          </optgroup>
+          <optgroup label="Engineering">
+            <option value="bs-in-aeronautical-engineering">BS in Aeronautical Engineering</option>
+            <option value="bs-in-civil-engineering">BS in Civil Engineering</option>
+            <option value="bs-in-computer-engineering">BS in Computer Engineering</option>
+            <option value="bs-in-electrical-engineering">BS in Electrical Engineering</option>
+            <option value="bs-in-electronics-engineering">BS in Electronics Engineering</option>
+            <option value="bs-in-industrial-engineering">BS in Industrial Engineering</option>
+            <option value="bs-in-mechanical-engineering">BS in Mechanical Engineerings</option>
+          </optgroup>
+          <optgroup label="Expanded Tertiary Education">
+            <option value="ab-in-communication">AB in Communication</option>
+            <option value="bs-in-hospitality-management">BS in Hospitality Management</option>
+            <option value="bs-in-human-resource-development-management">BS in Human Resource Development Management</option>
+            <option value="bs-in-marketing-management">BS in Marketing Management</option>
+          </optgroup>
+          <optgroup label="Information Technology Education">
+            <option value="bs-in-computer-science">BS in Computer Science</option>
+            <option value="bs-in-information-technology">BS in Information Technology</option>
+          </optgroup>
+          <optgroup label="International Tourism and Hospitality Management">
+            <option value="bs-in-hospitality-management">BS in Hospitality Management</option>
+            <option value="bs-in-tourism-management">BS in Tourism Management</option>
+          </optgroup>
+          <optgroup label="Maritime Education">
+            <option value="bs-in-marine-engineering">BS in Marine Engineering</option>
+            <option value="bs-in-marine-transportation">BS in Marine Transportation</option>
+            <option value="bs-in-navel-architecture-and-marine-engineering">BS in Naval Architecture and Marine Engineering</option>
+          </optgroup>
+          <optgroup label="Medical and Allied Health">
+            <option value="bs-in-medical-technology">BS in Medical Technology</option>
+            <option value="bs-in-midwifery">BS in Midwifery</option>
+            <option value="bs-in-nursing">BS in Nursing</option>
+            <option value="bs-in-occupational-therapy">BS in Occupational Therapy</option>
+            <option value="bs-in-pharmacy">BS in Pharmacy</option>
+            <option value="bs-in-physical-therapy">BS in Physical Therapy</option>
+            <option value="bs-in-radiologic-technology">BS in Radiologic Technology</option>
+            <option value="bs-in-respiratory-therapy">BS in Respiratory Therapy</option>
+            <option value="doctor-of-dental-medicine">Doctor of Dental Medicine</option>
+          </optgroup>
+          <optgroup label="Teacher Education">
+            <option value="bachelor-in-early-childhood-education">Bachelor in Early Childhood Education</option>
+            <option value="bachelor-of-elementary-education">Bachelor of Elementary Education</option>
+            <option value="bachelor-of-physical-education">Bachelor of Physical Education</option>
+            <option value="bachelor-of-secondary-education">Bachelor of Secondary Education</option>
+            <option value="bachelor-of-special-needs-education">Bachelor of Special Needs Education</option>
+            <option value="teacher-certificate-program">Teacher Certificate Program</option>
+          </optgroup>
+          <optgroup label="Technical Vocational Programs">
+            <option value="agricultral-crops-productions-nci">Agricultural Crops Production NCI</option>
+            <option value="animal-production-ncii">Animal Production NCII</option>
+            <option value="auto-service-training">Auto Service Training</option>
+            <option value="automative-servicing-nci-and-ncii">Automotive Servicing NCI and NCII</option>
+            <option value="bartending-ncii">Bartending NCII</option>
+            <option value="bread-and-pastry-ncii">Bread and Pastry NCII</option>
+            <option value="caregiving-ncii">Caregiving NCII</option>
+            <option value="commercial-cooking-or-cookery-ncii">Commercial Cooking / Cookery NCII</option>
+            <option value="computer-system-servicing-ncii">Computer System Servicing NCII</option>
+            <option value="consumer-electronics-servicing-ncii">Consumer Electronics Servicing NCII</option>
+            <option value="cookery-ncii">Cookery NCII</option>
+            <option value="food-and-beverages-services-ncii">Food and Beverages Services NCII</option>
+            <option value="health-care-services-ncii-(nurising-aid)">Health Care Services NCII – (Nursing Aid)</option>
+            <option value="housekeeping-ncii">Housekeeping NCII</option>
+            <option value="message-therapy-nci">Massage Therapy NCI</option>
+            <option value="shielded-metal-act-welding-(swam)-ncii">Shielded Metal Arc Welding (SWAM) NCII</option>
+          </optgroup>
+        </select>
+        <br>
+        <label id="1st-year-label" for="1st-year">1st Year
+          <br>
+          <input type="radio" id="1st-year" name="year-level" value="1st-year">
+          <br>
+          </label>
+        <label id="2nd-year-label" for="2nd-year">2nd Year
+          <br>
+          <input type="radio" id="2nd-year" name="year-level" value="2nd-year">
+          <br>
+          </label>
+        <label id="3rd-year-label" for="3rd-year">3rd Year
+          <br>
+          <input type="radio" id="3rd-year" name="year-level" value="3rd-year">
+          <br>
+          </label>
+        <label id="4th-year-label" for="4th-year">4th Year
+          <br>
+          <input type="radio" id="4th-year" name="year-level" value="4th-year">
+          <br>
+          </label>
+        <label id="5th-year-label" for="5th-year">5th Year
+          <br>
+          <input type="radio" id="5th-year" name="year-level" value="5th-year">
+          </label>
+      </fieldset>
+      <fieldset>
+        <label></label><textarea id=""></textarea>
+      </fieldset>
+      <fieldset>
+        <label>I agree to terms and conditions<input id="terms-and-conditions" type="checkbox" value="terms-and-conditions"></label>
+        <label>I agree to privacy policy<input id="privacy-policy" type="checkbox" value="privacy-policy"></label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
