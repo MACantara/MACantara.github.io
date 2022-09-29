@@ -16,19 +16,19 @@
     </p>
     <form id="survey-form">
       <fieldset>
-        <label id="name-label" for="name">Name: </label>
+        <label class="label" id="name-label" for="name">Name: </label>
         <br>
         <input id="name" type="text" placeholder="Juan de la Cruz" required>
         <br>
-        <label id="email-label" for="email">Email: </label>
+        <label class="label" id="email-label" for="email">Email: </label>
         <br>
         <input id="email" type="email" placeholder="example@email.com" required>
         <br>
-        <label id="number-label" for="contact-number">Contact Number: </label>
+        <label class="label" id="number-label" for="contact-number">Contact Number: </label>
         <br>
         <input id="number" type="number" min="4" max="12" placeholder="123456789012" required>
         <br>
-        <label id="courses-label" for="courses">Courses: </label>
+        <label class="label" id="courses-label" for="courses">Courses: </label>
         <br>
         <select id="dropdown" required>
           <option value="">(Select Course)</option>
@@ -128,37 +128,51 @@
           </optgroup>
         </select>
         <br>
-        <label id="1st-year-label" for="1st-year">1st Year
+        <label class="radio-container" id="1st-year-label" for="1st-year">1st Year
           <br>
-          <input type="radio" id="1st-year" name="year-level" value="1st-year">
+          <input class="button" type="radio" id="1st-year" name="year-level" value="1st-year">
+          <span class="radio-checkmark"></span>
           <br>
           </label>
-        <label id="2nd-year-label" for="2nd-year">2nd Year
+        <label class="radio-container" id="2nd-year-label" for="2nd-year">2nd Year
           <br>
           <input type="radio" id="2nd-year" name="year-level" value="2nd-year">
+          <span class="radio-checkmark"></span>
           <br>
           </label>
-        <label id="3rd-year-label" for="3rd-year">3rd Year
+        <label class="radio-container" id="3rd-year-label" for="3rd-year">3rd Year
           <br>
           <input type="radio" id="3rd-year" name="year-level" value="3rd-year">
+          <span class="radio-checkmark"></span>
           <br>
           </label>
-        <label id="4th-year-label" for="4th-year">4th Year
+        <label class="radio-container" id="4th-year-label" for="4th-year">4th Year
           <br>
           <input type="radio" id="4th-year" name="year-level" value="4th-year">
+          <span class="radio-checkmark"></span>
           <br>
           </label>
-        <label id="5th-year-label" for="5th-year">5th Year
+        <label class="radio-container" id="5th-year-label" for="5th-year">5th Year
           <br>
           <input type="radio" id="5th-year" name="year-level" value="5th-year">
+          <span class="radio-checkmark"></span>
           </label>
       </fieldset>
       <fieldset>
         <label></label><textarea id=""></textarea>
       </fieldset>
       <fieldset>
-        <label>I agree to terms and conditions<input id="terms-and-conditions" type="checkbox" value="terms-and-conditions"></label>
-        <label>I agree to privacy policy<input id="privacy-policy" type="checkbox" value="privacy-policy"></label>
+        <label class="checkbox-container">I agree to terms and conditions
+          <br>
+          <input id="terms-and-conditions" type="checkbox" value="terms-and-conditions">
+          <span class="checkbox-checkmark"></span>
+        </label>
+        <br>
+        <label class="checkbox-container">I agree to privacy policy
+          <br>
+          <input id="privacy-policy" type="checkbox" value="privacy-policy">
+          <span class="checkbox-checkmark"></span>
+        </label>
       </fieldset>
       <input id="submit" type="submit" value="Submit">
     </form>
