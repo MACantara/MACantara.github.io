@@ -4,6 +4,10 @@ body {
   text-align: center;
   font-family: 'Roboto Mono', monospace;
   margin: 0 1.5rem;
+  background-image: url("imageedit_1_5448689153.png");
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-position: center;
 }
 
 h1 {
