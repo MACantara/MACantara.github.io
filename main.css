@@ -80,3 +80,47 @@ label {
     margin-right: auto;
     margin-left: auto;
 }
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.project-container a {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 75px 25px 75px 25px;
+    background-color: #3792E6;
+    color: white;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+.project-container img {
+    margin: 5px;
+    border: none;
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    height: 260px;
+    border-radius: 75px 25px 75px 25px;
+    margin: 10px auto;
+}
+
+.project-container a:hover {
+    box-shadow: 5px 10px 20px #3792E6;
+}
+
+.project-container::after {
+    content: "";
+    width: 350px;
+}
