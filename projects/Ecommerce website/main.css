@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+}
+
+nav.topnav-top, nav.topnav-bottom {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #921000;
+    position: -webkit-sticky; /* For meh Safari bois */
+    position: sticky;
+    top: 0;
+}
+
+nav.topnav-top a, nav.topnav-bottom a {
+    float: left;
+}
+
+nav.topnav-top a {
+    display: block;
+    color: white;
+    text-align: white;
+    padding: 9px 7px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+nav.topnav-bottom a {
+    display: block;
+    color: white;
+    text-align: white;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+
+nav.topnav-top a:hover:not(.active), nav.topnav-bottom a:hover:not(.active) {
+    background-color: rgb(182, 23, 3);
+}
+
+nav.topnav-top a.right, nav.topnav-bottom a.right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    nav.topnav-top a.right, 
+    nav.topnav-top a, 
+    nav.topnav-bottom a.right,
+    nav.topnav-bottom a {
+        float: none;
+        text-align: center;
+    }
+}
+
+.vl {
+    border-left: 1px solid white;
+    height: 17px;
+    margin: 8px 5px;
+    float: left;
+}
+
+.facebook {
+    width: 125px;
+    height: 125px;
+}
+
+.instagram {
+    width: 55px;
+    height: 55px;
+}
