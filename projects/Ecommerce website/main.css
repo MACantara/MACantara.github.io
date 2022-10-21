@@ -3,7 +3,7 @@ body {
     font-family: Verdana, sans-serif;
 }
 
-nav.topnav-top, nav.topnav-bottom {
+nav.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -14,11 +14,14 @@ nav.topnav-top, nav.topnav-bottom {
     top: 0;
 }
 
-nav.topnav-top a, nav.topnav-bottom a {
+nav.topnav a {
     float: left;
+    position: -webkit-sticky; /* For meh Safari bois */
+    position: sticky;
+    top: 0;
 }
 
-nav.topnav-top a {
+nav.topnav a {
     display: block;
     color: white;
     text-align: white;
@@ -27,37 +30,34 @@ nav.topnav-top a {
     font-size: 12px;
 }
 
-nav.topnav-bottom a {
-    display: block;
-    color: white;
-    text-align: white;
-    padding: 18px 20px;
-    text-decoration: none;
-}
-
-nav.topnav-top a:hover:not(.active), nav.topnav-bottom a:hover:not(.active) {
+nav.topnav a:hover:not(.active) {
     background-color: rgb(182, 23, 3);
 }
 
-nav.topnav-top a.right, nav.topnav-bottom a.right {
+nav.topnav a.right {
     float: right;
 }
 
 @media screen and (max-width: 600px) {
-    nav.topnav-top a.right, 
-    nav.topnav-top a, 
-    nav.topnav-bottom a.right,
-    nav.topnav-bottom a {
+    nav.topnav a.right, 
+    nav.topnav a  {
         float: none;
         text-align: center;
     }
 }
 
-.vl {
+.vl-left {
     border-left: 1px solid white;
     height: 17px;
     margin: 8px 5px;
     float: left;
+}
+
+.vl-right {
+    border-left: 1px solid white;
+    height: 17px;
+    margin: 8px 5px;
+    float: right;
 }
 
 .facebook {
