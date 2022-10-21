@@ -1,0 +1,51 @@
+body {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    min-width: 250px;
+  }
+  
+#image {
+    display: block;
+    margin: 15px auto;
+    padding: 15px 0;
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+  
+figure {
+    padding: 5px;
+    min-width: 250px;
+    border-radius: 15px;
+}
+  
+figcaption {
+    padding: 10px 0;
+    color: rgb(0, 0, 0);
+}
+  
+ul li {
+    text-align: justify;
+    margin: 15px 0;
+}
+  
+.gray-background {
+    background-color: rgb(194, 194, 194);
+    margin: 10px auto;
+    max-width: 280px;
+    border-radius: 15px;
+}
+
+.light-gray-background {
+    background-color: rgba(194, 194, 194, 0.4);
+    border-radius: 15px;
+    margin: 15px;
+    padding: 5px;
+}
+  
+#tribute-info {
+    max-width: 500px;
+    margin: 0 auto;
+}
