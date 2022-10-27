@@ -1,0 +1,69 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #a31300;
+}
+
+fieldset {
+    margin: 25px auto;
+    border-radius: 10px;
+    max-width: 850px;
+    padding: 25px;
+    border-color: white;
+}
+
+legend {
+    font-weight: bold;
+    color: #f9cc01;
+}
+
+h1 {
+    font-size: 15px;
+}
+
+table {
+    padding: 25px 0;
+}
+
+th {
+    text-align: left;
+}
+
+input {
+    margin: 5px 0;
+    width: 358px;
+    padding: 5px;
+}
+
+select {
+    padding: 5px;
+    width: 372px;
+}
+
+form {
+    margin: 0 auto;
+}
+
+div {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 780px;
+}
+
+#submit {
+    width: 100px;
+    margin: 15px 22rem;
+    position: relative;
+    background-color: #dab200;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#email-contact, #phone-contact, #ms-teams-contact {
+    width: 55px;
+}
