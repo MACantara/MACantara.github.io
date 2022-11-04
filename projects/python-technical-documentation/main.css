@@ -88,7 +88,7 @@ main section header {
     left: 0;
     background-color: blue;
     width: 100%;
-    z-index: 0;
+    z-index: 1;
 }
 
 .subnav-content-2 {
@@ -97,7 +97,7 @@ main section header {
     left: 0;
     background-color: yellow;
     width: 100%;
-    z-index: 0;
+    z-index: 1;
 }
 
 .subnav-content-3 {
@@ -157,7 +157,5 @@ main section header {
 /* End of Sub Nav */
 
 .scroll-bar {
-    overflow:scroll;
-    overflow-x:hidden;
-    overflow-y:scroll;
+    overflow-y: scroll;
 }
