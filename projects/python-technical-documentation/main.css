@@ -159,3 +159,17 @@ main section header {
 .scroll-bar {
     overflow-y: scroll;
 }
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: green;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
