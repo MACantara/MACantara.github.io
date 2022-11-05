@@ -184,3 +184,7 @@ code {
         width: 450px;
     }
 }
+
+li {
+    margin: 15px 0;
+}
