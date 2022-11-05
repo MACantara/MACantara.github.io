@@ -173,3 +173,14 @@ code {
     margin: 10px;
     border-radius: 5px;
 }
+
+@media screen and (max-width: 700px) {
+    nav {
+        display: none;
+    }
+    #main-doc {
+        position: absolute;
+        margin-left: 0;
+        width: 450px;
+    }
+}
