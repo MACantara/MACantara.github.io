@@ -69,3 +69,9 @@ nav.topnav a.right {
     width: 55px;
     height: 55px;
 }
+
+.i-right {
+    float: right;
+    padding: 15px;
+    color: white;
+}

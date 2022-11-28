@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 800px;
+    background-color: #191919;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.logo{
+    width: 250px;
+    margin-left: 8%;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    justify-content: center;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-image: none;
+    font-size: 25px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 50%;
+}
+
+nav ul li a:hover{
+    color: #5b5b5b;
+}
+
+.detel{
+    margin: 8% 0 0 8%;
+    position: absolute;
+}
+
+.detel h1{
+    font-size: 95px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+.detel h2{
+    font-size: 45px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.detel p{
+    color: white;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+#green {
+    color: #04ab6c;
+}
+
+#see-more{
+    background: #191919;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 40px 0 10px 0;
+    border-radius: 15px;
+}
+
+.image{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.image img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.image:hover .boy{
+    left: 45%;
+}
+
+.custom-shape-divider-bottom-1669369236 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1669369236 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 74px;
+}
+
+.custom-shape-divider-bottom-1669369236 .shape-fill {
+    fill: #191919;
+}
+
+#animated-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black; 
+    margin-top: -85px; 
+}
+
+div p {
+    position: absolute;
+}
+
+div .personal-information h2 {
+    position: relative;
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 40px;
+}
+
+/* Start of Social Media Buttons */
+
+.roll_over {
+    height: 45px;
+    width: 45px;
+    margin-top: 15px;
+    display: inline-block;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.roll_over:hover {
+    background-position: 0px -5px;
+}
+
+.facebook {
+    background-image: url('https://img.icons8.com/color/48/1A1A1A/facebook.png');
+}
+
+.instagram {
+    background-image: url('https://img.icons8.com/color/48/000000/instagram-new--v1.png');
+}
+
+.github {
+    background-image: url("https://img.icons8.com/ios-glyphs/45/null/github.png");
+}
+
+.twitter {
+    background-image: url("https://img.icons8.com/color/48/null/twitter--v1.png");
+}
+
+.gmail {
+    background-image: url("https://img.icons8.com/color/45/null/gmail-new.png");
+}
+
+.phone {
+    background-image: url("https://img.icons8.com/color/48/null/phone.png");
+}
+
+/* End of Social Media Buttons */
+
+.custom-shape-divider-top-1669376531 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+}
+
+.custom-shape-divider-top-1669376531 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 221px;
+}
+
+.custom-shape-divider-top-1669376531 .shape-fill {
+    fill: #191919;
+}
+
+@media screen and (max-width: 1300px) {
+    .image{
+        width: 35%;
+        height: 70%;
+        position: absolute;
+        bottom: 0;
+        right: 100px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .image{
+        width: 15%;
+        height: 50%;
+        position: absolute;
+        bottom: 0;
+        right: 100px;
+    }
+}
+
+#seminar-content {
+    display: flex;
+    flex-direction: row;
+    object-fit: cover;
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+    margin: 25px 23em;
+    gap: 8px;
+    border-radius: 15px;
+}
+
+#oates-award-1 {
+    width: 100%;
+    max-width: 1000px;
+    height: 700px;
+    margin: 25px 28em;
+}
+
+.smooth-corners {
+    border-radius: 15px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
+}
+
+.education-timeline {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 32px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    max-width: 800px;
+    margin-bottom: -125px;
+}
+
+.education-container {
+    background-color: #5b5b5b;
+    width: 300px;
+    height: 100px;
+    box-shadow: 6px 6px 10px 1px black;
+    margin: 25px auto;
+    padding: 20px 0;
+}
+
+.education-container h3 {
+    text-align: center;
+    padding: 25px;
+    color: white;
+}
