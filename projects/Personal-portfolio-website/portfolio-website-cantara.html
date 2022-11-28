@@ -6,10 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Personal Portfolio</title>
         <link rel="stylesheet" href="styles.css">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
         <script src="https://kit.fontawesome.com/4085ebc2c3.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     </head>
     <body>
     <div class="hero">
@@ -32,7 +34,10 @@
                 <h1>John Kenneth Oates</h1>
                 <h2><span id="green">BS in Information Technology</span></h2>
                 <p>This is my Offficial Portfolio Website</p>
-                <a id="see-more" href="#education-background">SEE MORE</a>
+                <div>
+                    <a id="see-more" href="#education-background">SEE MORE</a>
+                    <a id="my-partner" href="/projects/Personal-portfolio-website/portfolio-website-oates.html"></a>
+                </div>
                 <div class="contact">
                     <a class="gmail roll_over" href="mailto:Oatesjek@gmail.com" target="_blank"></a>
                     <a class="facebook roll_over" href="https://www.facebook.com/johnkenneth.oates" target="_blank"></a>
@@ -56,31 +61,112 @@
             <div>
                 <div class="personal-information">
                     <h2 id="education-background" data-aos="fade-up">Educational Background</h2>
-                    <div class="education-timeline">
-                        <div class="smooth-corners education-container roll_over" data-aos="fade-up">
-                            <h3>Elementary = East Rembo Elementary School</h3>
+                    <div class="section-container" data-aos="fade-up">
+                        <div class="card smooth-corners">
+                            <div class="header">
+                                <div class="img-box">
+                                    <img class="school-logo" src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/289638951_501831661949845_3635726536270295752_n.png?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFIGsfKQv2SyGs-CLXQp6I3GaunofDhab4Zq6eh8OFpvvGaNMmRtr7Db4tHJHzLwgQ0VtgxxP4R7LQFLFZF0Rne&_nc_ohc=_uDSLkBvbH4AX8-OdOl&_nc_ht=scontent.fcrk1-5.fna&oh=00_AfBJTE78XyuX3o-PFffF7ImsiDSUh_Dl8755MUipUZs1Rw&oe=6389B4A0" alt="East Rembo Elementary School Logo">
+                                </div>
+                                <h1 class="title">Elementary</h1>
+                            </div>
+                        
+                            <div class="content">
+                                <p>
+                                    East Rembo Elementary School
+                                </p>
+                                <p>
+                                    Studied in 2010-2015
+                                </p>
+                        
+                                <a class="btn-link" href="https://www.facebook.com/eastremboes">Read More...</a>
+                            </div>
                         </div>
-                        <div class="smooth-corners education-container roll_over" data-aos="fade-up">
-                            <h3>High School = Benigno "Ninoy" S. Aquino High School</h3>
+                        <div class="card smooth-corners">
+                            <div class="header">
+                                <div class="img-box">
+                                    <img class="school-logo" src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t39.30808-6/308600365_596913622225953_3193268446222108397_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFK6VplciC5dyRTLOEfSRw20pwDxoXSv-nSnAPGhdK_6ddFqz0CZXc76sYSRz9ArRvultGPvgNhIINDbAzEbcCm&_nc_ohc=nTVtIJk9kX4AX94Xmhf&_nc_ht=scontent.fcrk1-1.fna&oh=00_AfACNtruZ0OF7SusjW0cMD64RGCx0zM2XmPh4WPDfXyF3g&oe=6388F9D9" alt="East Rembo Elementary School Logo">
+                                </div>
+                                <h1 class="title">High School</h1>
+                            </div>
+                        
+                            <div class="content">
+                                <p>
+                                    Benigno "Ninoy" S. Aquino High School
+                                </p>
+                                <p>
+                                    Studied in 2016-2019
+                                </p>
+                        
+                                <a class="btn-link" href="https://www.facebook.com/BNAHS2020">Read More...</a>
+                            </div>
                         </div>
-                        <div class="smooth-corners education-container roll_over" data-aos="fade-up">
-                            <h3>Senior High School = Jose Rizal University</h3>
+                        <div class="card smooth-corners">
+                            <div class="header">
+                                <div class="img-box">
+                                    <img class="school-logo" src="https://imgs.search.brave.com/12lkQJgkeCf0ZSmd5sD4EYJYZbnZfPT6RWrep-tyLLo/rs:fit:900:900:1/g:ce/aHR0cHM6Ly95dDMu/Z2dwaHQuY29tL2Ev/QUFUWEFKelpsZkw4/VE01YXNCV1UtY29C/bWt3OXpJZGthOTlG/Z08zRDl3PXM5MDAt/Yy1rLWMweGZmZmZm/ZmZmLW5vLXJqLW1v" alt="East Rembo Elementary School Logo">
+                                </div>
+                                <h1 class="title">Senior High School</h1>
+                            </div>
+                        
+                            <div class="content">
+                                <p>
+                                    Jose Rizal University
+                                </p>
+                                <p>
+                                    Studied in 2020-2022
+                                </p>
+                        
+                                <a class="btn-link" href="https://jru.edu/">Read More...</a>
+                            </div>
                         </div>
-                        <div class="smooth-corners education-container roll_over" data-aos="fade-up">
-                            <h3>College = University of Perpetual Help Molino Campus</h3>
+                        <div class="card smooth-corners">
+                            <div class="header">
+                                <div class="img-box">
+                                    <img class="school-logo" src="http://perpetualdalta.edu.ph/wp-content/uploads/2018/02/perpetual-icon-e1523428467649-209x300.png" alt="East Rembo Elementary School Logo">
+                                </div>
+                                <h1 class="title">College</h1>
+                            </div>
+                        
+                            <div class="content">
+                                <p>
+                                    University of Perpetual Help Molino Campus
+                                </p>
+                                <p>
+                                    Studied in 2022-2024
+                                </p>
+
+                                <a class="btn-link" href="https://jru.edu/">Read More...</a>
+                            </div>
                         </div>
                     </div>
-                    <h2 id="technical-skills"  data-aos="fade-up">Technical Skills</h2>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Python</li>
-                        <li>C++</li>
-                    </ul>
-                    <h2 id="awards"  data-aos="fade-up">Awards</h2>
-                    <img id="oates-award-1" class="smooth-corners" data-aos="fade-up" src="https://i.imgur.com/IJ9ppjB.png" onerror="this.src='images/oates-award-1.png'" alt="Oates Award">
+                    <div class="dark-background">
+                        <h2 id="technical-skills" data-aos="fade-up">Technical Skills</h2>
+                        <div class="section-container" data-aos="fade-up">
+                            <div class="technical-skills-card">
+                                <img class="technical-skill-logo" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5 Powered" title="HTML5 Powered">
+                            </div>
+                            <div class="technical-skills-card">
+                                <img id="css-logo" class="technical-skill-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png" alt="CSS Logo">
+                            </div>
+                            <div class="technical-skills-card">
+                                <img class="technical-skill-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/115px-Python-logo-notext.svg.png" alt="Python Logo">
+                            </div>
+                            <div class="technical-skills-card">
+                                <img class="technical-skill-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/800px-ISO_C%2B%2B_Logo.svg.png" alt="C++ Logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="awards-container">
+                        <div data-aos="fade-right">
+                            <img id="oates-award-1" class="smooth-corners" src="https://i.imgur.com/IJ9ppjB.png" onerror="this.src='images/oates-award-1.png'" alt="Oates Award">
+                        </div>
+                        <div data-aos="fade-left">
+                            <h2 id="awards">Awards</h2>
+                            <p>freeCodeCamp is a non-profit organization that consists of an interactive learning web platform, an online community forum, chat rooms, online publications and local organizations that intend to make learning web development accessible to anyone.</p>
+                        </div>
+                    </div>
                     <div id="seminars">
-                        <h2 >Seminars</h2>
+                        <h2 id="seminars-heading">Seminars</h2>
                         <div id="seminar-content">
                             <img class="smooth-corners" data-aos="fade-up"src="https://i.imgur.com/IZkkiBz.png" onerror="this.src='images/modern-technology-of-parallel-and-distributed-programming-webinar.png'" alt="Modern Technology of Parellel and Distributed Programming Webinar">
                             <img class="smooth-corners" data-aos="fade-up"src="https://i.imgur.com/ZOtoM23.png" onerror="this.src='images/innovation-in-iot-for-smart-applications-webinar.png'" alt="Innovation in IoT for Smart Applications Webinar">
@@ -90,6 +176,7 @@
             </div>
             <div id="footer">
                 <p>Copyright &copy; 2029</p>
+                <a class="right" href="#animated-background">Back to top</a>
             </div>
         </div>
     </div>

@@ -118,7 +118,7 @@ nav ul li a:hover{
     font-weight: bold;
     color: #fff;
     display: inline-block;
-    margin: 40px 0 10px 0;
+    margin: 10px 0 10px 0;
     border-radius: 15px;
 }
 
@@ -172,13 +172,9 @@ nav ul li a:hover{
     margin-top: -85px; 
 }
 
-div p {
-    position: absolute;
-}
-
 div .personal-information h2 {
     position: relative;
-    color: white;
+    color: #04ab6c;
     text-align: center;
     margin-top: 150px;
     font-size: 40px;
@@ -287,7 +283,8 @@ div .personal-information h2 {
     width: 100%;
     max-width: 1000px;
     height: 700px;
-    margin: 25px 28em;
+    margin-left: 24%;
+    margin-top: 25px;
 }
 
 .smooth-corners {
@@ -306,29 +303,396 @@ div .personal-information h2 {
     padding-top: 60px;
 }
 
-.education-timeline {
+.section-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
     gap: 32px;
     margin: 0 auto;
-    padding: 20px 10px;
+    padding: 20px 0;
     max-width: 800px;
     margin-bottom: -125px;
 }
 
-.education-container {
-    background-color: #5b5b5b;
+/* Start of Card for Education Background */
+
+.card {
     width: 300px;
-    height: 100px;
-    box-shadow: 6px 6px 10px 1px black;
-    margin: 25px auto;
-    padding: 20px 0;
+    height: 150px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
+                -15px -15px 30px rgba(60, 60, 60, 0.082);
+            box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
+                -15px -15px 30px rgba(60, 60, 60, 0.082);
+    text-align: center;
+    overflow: hidden;
 }
 
-.education-container h3 {
+.card:hover {
+    height: 280px;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(60%, #edededc5), color-stop(70%, hsla(0, 0%, 13%, 1)));
+    background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
+}
+
+.card .header {
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #212121;
+    margin-bottom: 16px;
+}
+
+.card .header .title {
+    font-size: 1.1em;
+    letter-spacing: .1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 4px 0 14px 0;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    color: #edededc5;
+}
+
+.card:hover .header {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+}
+
+.card:hover .card .header .title {
+    padding: 0;
+}
+
+.card .content {
+    display: block;
+    text-align: justify;
+    color: #212121;
+    margin: 0 18px;
+}
+
+.card .content p {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    font-size: 1em;
+    margin-bottom: 8px;
     text-align: center;
+}
+  
+.card .content a {
+    color: #1d8122;
+    cursor: pointer;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    font-size: .8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+  
+.card .content .btn-link:hover {
+    border-bottom: 1px solid #1d8122;
+}
+
+/* End of Card for Education Background */
+
+.school-logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+/* Start of Card for Technical Skills */
+
+.technical-skills-card {
+    width: 190px;
+    height: 190px;
+    background: #212121;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.technical-skills-card h2 {
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+}
+
+.technical-skills-card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 183, 255)), to(rgb(255, 48, 255)));
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 130%;
+    -webkit-animation: rotBGimg 3s linear infinite;
+            animation: rotBGimg 3s linear infinite;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+@-webkit-keyframes rotBGimg {
+from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+}
+
+@keyframes rotBGimg {
+from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+}
+
+.technical-skills-card::after {
+    content: '';
+    position: absolute;
+    background: #212121;
+    inset: 5px;
+    border-radius: 15px;
+}  
+
+.card:hover:before {
+    background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+    animation: rotBGimg 3.5s linear infinite;
+} 
+
+/* Start of Card for Technical Skills */
+
+.technical-skill-logo {
+    width: 75px;
+    height: 75px;
+    z-index: 1;
+}
+
+#css-logo {
+    height: 100px;
+}
+
+#awards-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+
+#awards-container p {
+    color: white;
+    font-size: 25px;
+    width: 550px;
+    margin-left: 300px;
+    margin-top: 25px;
+    text-align: justify;
+    background-color: #212121;
     padding: 25px;
+    border-radius: 25px;
+}
+
+#awards-container h2 {
+    margin-left: 300px;
+    margin-top: 200px;
+}
+
+/* Start of custom scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+    
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #212121;
+}
+
+/* End of customer scrollbar */
+
+#footer {
+    color: white;
+    background-color: #212121;
+    width: 100%;
+    padding: 25px 0;
+}
+
+#footer p {
+    margin-left: 25px;
     color: white;
 }
+
+#footer a.right {
+    float: right;
+    margin-right: 25px;
+    margin-top: -17px;
+    color: white;
+    text-decoration: none;
+}
+
+#footer a.right:hover {
+    color: #5b5b5b;
+}
+
+.dark-background {
+    background-color: #121212;
+    position: relative;
+    padding: 25px;
+    margin-top: 150px;
+    height: 480px;
+}
+
+#technical-skills {
+    margin-top: -5px;
+}
+
+#seminars {
+    background-color: #121212;
+    padding: 5px 0;
+    margin-top: -50px;
+}
+
+#seminars-heading {
+    margin-top: 25px;
+}
+
+#education-background {
+    margin-top: 55px;
+}
+
+/* Start of button */
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button.learn-more {
+    width: 12rem;
+    height: auto;
+}
+
+button.learn-more .circle {
+    -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+    -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+    -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.35rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+    -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: white;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover .circle {
+    width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+    background: #fff;
+    -webkit-transform: translate(1rem, 0);
+        -ms-transform: translate(1rem, 0);
+            transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+    color: #04ab6c;
+}
+
+/* End of button */
