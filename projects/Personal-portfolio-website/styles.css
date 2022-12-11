@@ -81,12 +81,6 @@ nav ul li a:hover{
     color: white;
     margin-bottom: 20px;
     margin-top: 100px;
-    color: transparent;
-    -webkit-text-stroke: 1px #fff;
-    background: url(images/back.png);
-    -webkit-background-clip: text;
-    background-position: 0 0;
-    animation: back 20s linear infinite;
 }
 
 @keyframes back {
@@ -107,7 +101,11 @@ nav ul li a:hover{
     margin-bottom: 20px;
 }
 
-#green {
+.green {
+    color: #04ab6c;
+}
+
+span {
     color: #04ab6c;
 }
 
@@ -182,46 +180,27 @@ div .personal-information h2 {
 
 /* Start of Social Media Buttons */
 
-.roll_over {
-    height: 45px;
-    width: 45px;
-    margin-top: 15px;
-    display: inline-block;
-    -webkit-transition: all ease 0.5s;
-    -moz-transition: all ease 0.5s;
-    -o-transition: all ease 0.5s;
-    -ms-transition: all ease 0.5s;
-    transition: all ease 0.5s;
-    overflow: hidden;
-    background-repeat: no-repeat;
+.social a {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: #eee;
+    cursor: pointer;
+    margin-right: 20px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 25px;
+    margin-bottom: 35px;
 }
 
-.roll_over:hover {
-    background-position: 0px -5px;
-}
-
-.facebook {
-    background-image: url('https://img.icons8.com/color/48/1A1A1A/facebook.png');
-}
-
-.instagram {
-    background-image: url('https://img.icons8.com/color/48/000000/instagram-new--v1.png');
-}
-
-.github {
-    background-image: url("https://img.icons8.com/ios-glyphs/45/null/github.png");
-}
-
-.twitter {
-    background-image: url("https://img.icons8.com/color/48/null/twitter--v1.png");
-}
-
-.gmail {
-    background-image: url("https://img.icons8.com/color/45/null/gmail-new.png");
-}
-
-.phone {
-    background-image: url("https://img.icons8.com/color/48/null/phone.png");
+.social a:hover {
+    transform: scale(1.1);
+    background: #04ab6c;
+    transition: 0.4s;
 }
 
 /* End of Social Media Buttons */
@@ -247,24 +226,11 @@ div .personal-information h2 {
     fill: #191919;
 }
 
-@media screen and (max-width: 1300px) {
-    .image{
-        width: 35%;
-        height: 70%;
-        position: absolute;
-        bottom: 0;
-        right: 100px;
-    }
-}
-
-@media screen and (max-width: 600px){
-    .image{
-        width: 15%;
-        height: 50%;
-        position: absolute;
-        bottom: 0;
-        right: 100px;
-    }
+@media screen and (max-width: 600px) {
+    #seminar-content {
+        height: 300px;
+        border-radius: 100%;
+    };
 }
 
 #seminar-content {
@@ -274,7 +240,6 @@ div .personal-information h2 {
     width: 100%;
     max-width: 600px;
     height: 600px;
-    margin: 25px 23em;
     gap: 8px;
     border-radius: 15px;
 }
@@ -311,7 +276,7 @@ div .personal-information h2 {
     gap: 32px;
     margin: 0 auto;
     padding: 20px 0;
-    max-width: 800px;
+    max-width: 1100px;
     margin-bottom: -125px;
 }
 
@@ -331,7 +296,7 @@ div .personal-information h2 {
 }
 
 .card:hover {
-    height: 280px;
+    height: 290px;
     background: -webkit-gradient(linear, left bottom, left top, color-stop(60%, #edededc5), color-stop(70%, hsla(0, 0%, 13%, 1)));
     background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
 }
@@ -391,7 +356,7 @@ div .personal-information h2 {
 }
   
 .card .content a {
-    color: #1d8122;
+    color: #04ab6c;
     cursor: pointer;
     -webkit-transition: all .5s;
     transition: all .5s;
@@ -401,7 +366,7 @@ div .personal-information h2 {
 }
   
 .card .content .btn-link:hover {
-    border-bottom: 1px solid #1d8122;
+    border-bottom: 1px solid #04ab6c;
 }
 
 /* End of Card for Education Background */
@@ -626,7 +591,7 @@ button.learn-more .circle {
     margin: 0;
     width: 3rem;
     height: 3rem;
-    background: #282936;
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 1.625rem;
 }
 
@@ -696,3 +661,46 @@ button:hover .button-text {
 }
 
 /* End of button */
+.detel h3 {
+    color: white;
+    margin-top: 65px;
+    margin-left: 5px;
+    margin-bottom: -85px;
+    font-size: 25px;
+}
+
+/* Start of Swiper */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* End of Swiper */
