@@ -552,10 +552,23 @@ to {
     background-color: #121212;
     padding: 5px 0;
     margin-top: -50px;
+    margin: 0 auto;
+}
+
+#seminars-content {
+    margin-left: 28%;
+    width: 50%;
+    padding: 10px;
+}
+
+#seminars img {
+    width: 400px;
+    height: 400px;
 }
 
 #seminars-heading {
     margin-top: 25px;
+    margin: auto;
 }
 
 #education-background {
@@ -668,39 +681,3 @@ button:hover .button-text {
     margin-bottom: -85px;
     font-size: 25px;
 }
-
-/* Start of Swiper */
-
-.swiper {
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* End of Swiper */
