@@ -8,6 +8,8 @@ html {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
 }
 
 body {
@@ -71,34 +73,23 @@ nav ul li a:hover{
     color: #5b5b5b;
 }
 
-.detel{
-    margin: 8% 0 0 8%;
+nav ul li a.active::after {
+    content: "";
+    width: 0;
+    height: 3px;
     position: absolute;
-}
-
-.detel h1{
-    font-size: 65px;
-    color: white;
-    margin-bottom: 20px;
-    margin-top: 100px;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s;
+    width: 50%;
 }
 
 @keyframes back {
     100% {
         background-position: 2000px 0;
     }
-}
-
-.detel h2{
-    font-size: 45px;
-    color: white;
-    margin-bottom: 20px;
-}
-
-.detel p{
-    color: white;
-    line-height: 22px;
-    margin-bottom: 20px;
 }
 
 .green {
@@ -141,7 +132,7 @@ span {
     left: 45%;
 }
 
-.custom-shape-divider-bottom-1669369236 {
+.bottom-hero-shape {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -149,17 +140,20 @@ span {
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+    z-index: 1;
 }
 
-.custom-shape-divider-bottom-1669369236 svg {
+.bottom-hero-shape svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 74px;
+    z-index: 1;
 }
 
-.custom-shape-divider-bottom-1669369236 .shape-fill {
+.bottom-hero-shape .shape-fill {
     fill: #191919;
+    z-index: 1;
 }
 
 #animated-background {
@@ -168,14 +162,6 @@ span {
     height: 100%;
     background: black; 
     margin-top: -85px; 
-}
-
-div .personal-information h2 {
-    position: relative;
-    color: #04ab6c;
-    text-align: center;
-    margin-top: 150px;
-    font-size: 40px;
 }
 
 /* Start of Social Media Buttons */
@@ -205,7 +191,7 @@ div .personal-information h2 {
 
 /* End of Social Media Buttons */
 
-.custom-shape-divider-top-1669376531 {
+.top-hero-shape {
     position: absolute;
     top: 0;
     left: 0;
@@ -215,22 +201,15 @@ div .personal-information h2 {
     z-index: 1;
 }
 
-.custom-shape-divider-top-1669376531 svg {
+.top-hero-shape svg {
     position: relative;
     display: block;
     width: calc(300% + 1.3px);
     height: 221px;
 }
 
-.custom-shape-divider-top-1669376531 .shape-fill {
+.top-hero-shape .shape-fill {
     fill: #191919;
-}
-
-@media screen and (max-width: 600px) {
-    #seminar-content {
-        height: 300px;
-        border-radius: 100%;
-    };
 }
 
 #seminar-content {
@@ -277,32 +256,27 @@ div .personal-information h2 {
     margin: 0 auto;
     padding: 20px 0;
     max-width: 1100px;
-    margin-bottom: -125px;
+    margin-top: 2rem;
 }
 
 /* Start of Card for Education Background */
 
 .card {
-    width: 300px;
-    height: 150px;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    -webkit-box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
-                -15px -15px 30px rgba(60, 60, 60, 0.082);
-            box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
-                -15px -15px 30px rgba(60, 60, 60, 0.082);
+    --bg: #212121;
+    --hover-bg: #04ab6c;
+    --hover-text: white;
+    max-width: 23ch;
     text-align: center;
+    background: var(--bg);
+    padding: 1.5em;
+    padding-block: 1.8em;
+    border-radius: 0.5rem;
+    position: relative;
     overflow: hidden;
-}
-
-.card:hover {
-    height: 290px;
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(60%, #edededc5), color-stop(70%, hsla(0, 0%, 13%, 1)));
-    background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
-}
-
-.card .header {
-    padding: 20px;
+    -webkit-transition: .3s cubic-bezier(.6,.4,0,1),-webkit-transform .15s ease;
+    transition: .3s cubic-bezier(.6,.4,0,1),-webkit-transform .15s ease;
+    transition: .3s cubic-bezier(.6,.4,0,1),transform .15s ease;
+    transition: .3s cubic-bezier(.6,.4,0,1),transform .15s ease,-webkit-transform .15s ease;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -310,63 +284,72 @@ div .personal-information h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background: #212121;
-    margin-bottom: 16px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1em;
 }
-
-.card .header .title {
-    font-size: 1.1em;
-    letter-spacing: .1em;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: 4px 0 14px 0;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    color: #edededc5;
+  
+.card__body {
+    color: white;
+    line-height: 1.5em;
+    font-size: 1.25rem;
+    margin: 0 1rem;
 }
-
-.card:hover .header {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+  
+.card > :not(span) {
+    -webkit-transition: .3s cubic-bezier(.6,.4,0,1);
+    transition: .3s cubic-bezier(.6,.4,0,1);
 }
-
-.card:hover .card .header .title {
-    padding: 0;
-}
-
-.card .content {
+  
+.card > strong {
     display: block;
-    text-align: justify;
-    color: #212121;
-    margin: 0 18px;
+    font-size: 1.5rem;
+    color: white;
+}
+  
+.card span {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: var(--hover-text);
+    border-radius: 5px;
+    font-weight: bold;
+    top: 100%;
+    -webkit-transition: all .3s cubic-bezier(.6,.4,0,1);
+    transition: all .3s cubic-bezier(.6,.4,0,1);
 }
 
-.card .content p {
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    font-size: 1em;
-    margin-bottom: 8px;
-    text-align: center;
+.card a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.75rem;
 }
   
-.card .content a {
-    color: #04ab6c;
-    cursor: pointer;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    font-size: .8rem;
-    font-weight: 500;
-    text-transform: uppercase;
+.card:hover span {
+    top: 0;
+    font-size: 1.2em;
 }
   
-.card .content .btn-link:hover {
-    border-bottom: 1px solid #04ab6c;
+.card:hover {
+    background: var(--hover-bg);
+}
+
+.card:hover>div,.card:hover>strong {
+    opacity: 0;
 }
 
 /* End of Card for Education Background */
@@ -461,28 +444,35 @@ to {
     height: 100px;
 }
 
-#awards-container {
+.personal-information-container {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
     margin-bottom: 80px;
 }
 
-#awards-container p {
-    color: white;
-    font-size: 25px;
-    width: 550px;
-    margin-left: 300px;
-    margin-top: 25px;
-    text-align: justify;
-    background-color: #212121;
-    padding: 25px;
-    border-radius: 25px;
+.personal-information-container img {
+    margin-left: 21rem;
+    margin-top: 8rem;
 }
 
-#awards-container h2 {
-    margin-left: 300px;
-    margin-top: 200px;
+.personal-information-container p {
+    color: white;
+    font-size: 2.5rem;
+    width: 75rem;
+    margin-left: 30rem;
+    margin-top: 5rem;
+    text-align: justify;
+    background-color: #212121;
+    padding: 2.5rem;
+    border-radius: 2.5rem;
+}
+
+.personal-information-container h2 {
+    color: #04ab6c;
+    font-size: 3rem;
+    margin-left: 60rem;
+    margin-top: 3rem;
 }
 
 /* Start of custom scrollbar */
@@ -522,6 +512,7 @@ to {
 #footer p {
     margin-left: 25px;
     color: white;
+    font-size: 1.5rem;
 }
 
 #footer a.right {
@@ -530,6 +521,7 @@ to {
     margin-top: -17px;
     color: white;
     text-decoration: none;
+    font-size: 1.5rem;
 }
 
 #footer a.right:hover {
@@ -674,10 +666,116 @@ button:hover .button-text {
 }
 
 /* End of button */
-.detel h3 {
+
+.hero-title {
+    display: block;
     color: white;
-    margin-top: 65px;
-    margin-left: 5px;
-    margin-bottom: -85px;
-    font-size: 25px;
+    text-align: center;
+    margin-top: 33rem;
+    margin-left: 34%; 
+    margin-right: 32%;
+    font-size: 2.5rem;
+    position: absolute;
 }
+
+.hero-subtitle {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.career-label {
+    color: #04ab6c;
+    margin-top: 1rem;
+}
+
+/* Start of Scroll Down Animation */
+
+.scroll-down {
+    display: flex;
+    justify-content: center;
+}
+
+.scroll-down a {
+    position: absolute;
+    bottom: 20px;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+  }
+
+.scroll-down a:hover {
+    opacity: .5;
+}
+
+.scroll-down-icon a {
+    padding-top: 60px;
+}
+
+.scroll-down-icon a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+  
+.scroll-down-icon a span::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: sdb10 2s infinite;
+    animation: sdb10 2s infinite;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb10 {
+    0% {
+      -webkit-transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      -webkit-transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+@keyframes sdb10 {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+/* End of Scroll Down Animation */

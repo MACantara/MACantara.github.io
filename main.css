@@ -1,3 +1,15 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -123,4 +135,13 @@ label {
 .project-container::after {
     content: "";
     width: 350px;
+}
+
+.work-in-progress-text p {
+    font-size: 2rem;
+}
+
+.work-in-progress-text {
+    font-size: 3rem;
+    margin-top: 31rem;
 }
