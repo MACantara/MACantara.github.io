@@ -19,28 +19,30 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    font-size: 2rem;
 }
 
 /* Navigation styles */
-.nav {
-    background-color: #333;
+nav {
+    background-color: #1978d1; /* blue */
     color: #fff;
     display: flex;
     justify-content: flex-end;
     padding: 1rem 0;
 }
 
-.nav li {
-    margin-left: 2rem;
+nav li {
+    margin-right: 2rem;
+    list-style-type: none; /* This removes the bullets */
 }
 
-.nav li a {
+nav li a {
     color: #fff;
     text-decoration: none;
 }
 
-.nav li a:hover {
-    color: #1978d1;
+nav li a:hover {
+    color: #ff7f00; /* complementary orange */
 }
 
 /* Image styles */
