@@ -1,36 +1,49 @@
+/* Reset CSS */
 *,
-::before,
-::after {
+*::before,
+*::after {
     margin: 0;
     padding: 0;
-}
-
-html {
-    font-size: 62.5%;
     box-sizing: border-box;
 }
 
+/* Root HTML styles */
+html {
+    font-size: 62.5%;
+}
+
+/* Body styles */
 body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
-li {
-    float: right;
+/* Navigation styles */
+.nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 0;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+.nav li {
+    margin-left: 2rem;
+}
+
+.nav li a {
+    color: #fff;
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: #1978d1;
+.nav li a:hover {
+    color: #1978d1;
 }
 
+/* Image styles */
 img {
     width: 250px;
     height: 250px;
@@ -39,109 +52,65 @@ img {
     margin-top: 15px;
 }
 
+/* Label styles */
 label {
     display: block;
     margin: 0.5rem 0;
-} 
-
-.nav {
-    list-style-type: none;
-    margin: -8px;
-    margin-bottom: 2px;
-    padding: 0;
-    display: flex;
-    overflow: hidden;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    align-content: center;
-    vertical-align: middle;
-    background-color: #145da0;
-  }
-
-.personal-information {
-    margin-left: 15px;
 }
 
+/* Social media icon styles */
 .roll_over {
     height: 45px;
     width: 45px;
     margin-top: 15px;
-    display: inline-block;
-    -webkit-transition: all ease 0.5s;
-    -moz-transition: all ease 0.5s;
-    -o-transition: all ease 0.5s;
-    -ms-transition: all ease 0.5s;
-    transition: all ease 0.5s;
+    transition: background-position 0.5s ease;
 }
 
 .roll_over:hover {
     background-position: 0px -5px;
 }
 
-.facebook {
-    background-image:url('https://img.icons8.com/color/48/1A1A1A/facebook.png');
-}
-
-.instagram {
-    background-image:url('https://img.icons8.com/color/48/000000/instagram-new--v1.png');
-}
-
-.contact-form {
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-}
-
+/* Project container styles */
 .project-container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     gap: 16px;
     max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px 10px;
+    margin: 2rem auto;
+    padding: 20px;
 }
 
 .project-container a {
+    display: block;
     width: 100%;
     max-width: 350px;
     height: 300px;
-    object-fit: cover;
-    border-radius: 75px 25px 75px 25px;
     background-color: #3792E6;
-    color: white;
+    color: #fff;
     text-decoration: none;
-    padding-top: 20px;
-}
-
-.project-container img {
-    margin: 5px;
-    border: none;
-    width: 100%;
-    max-width: 300px;
-    object-fit: cover;
-    height: 260px;
-    border-radius: 75px 25px 75px 25px;
-    margin: 10px auto;
+    padding: 20px;
+    border-radius: 15px;
+    transition: box-shadow 0.3s ease;
 }
 
 .project-container a:hover {
-    box-shadow: 5px 10px 20px #3792E6;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.project-container::after {
-    content: "";
-    width: 350px;
+.project-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
 }
 
-.work-in-progress-text p {
-    font-size: 2rem;
+/* Work in progress text styles */
+h1 {
+    font-size: 4rem; /* equivalent to 64px */
+    margin-top: 20%;
 }
 
-.work-in-progress-text {
-    font-size: 3rem;
-    margin-top: 31rem;
+p {
+    font-size: 3rem; /* equivalent to 48px */
 }
