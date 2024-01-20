@@ -7,8 +7,7 @@
     <meta name="description" content="Personal Portfolio of Michael Angelo Cantara">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Michael Angelo Cantara">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://stackpath.bootstrapcdn.com; font-src 'self' https://cdn.jsdelivr.net">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">    
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
     <title>Home - Personal Portfolio Website</title>
@@ -24,13 +23,22 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary navbar-light">
         <a class="navbar-brand" href="#"><i class="bi bi-bootstrap"></i> My Website</a>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="#home"><i class="bi bi-house-door-fill"></i> Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about"><i class="bi bi-info-circle-fill"></i> About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact"><i class="bi bi-envelope-fill"></i> Contact</a></li>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home"><i class="bi bi-house-door-fill"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about"><i class="bi bi-info-circle-fill"></i> About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact"><i class="bi bi-envelope-fill"></i> Contact</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -59,5 +67,7 @@
             <span class="text-muted ml-3">Copyright &copy; 2023 Michael Angelo R. Cantara. All rights reserved.</span>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
