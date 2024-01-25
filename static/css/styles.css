@@ -513,9 +513,10 @@ to {
 /* End of customer scrollbar */
 
 #footer {
-    color: white;
-    background-color: #212121;
+    bottom: 0;
     width: 100%;
+    background-color: #212121;
+    color: white;
     padding: 25px 0;
 }
 
