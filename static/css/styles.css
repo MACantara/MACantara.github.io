@@ -1,0 +1,12 @@
+.section-height-500 {
+    height: 500px;
+}
+
+.main-section {
+  text-align: center;
+}
+
+.main-section-dark {
+  background-color: #333;
+  color: #fff;
+}
