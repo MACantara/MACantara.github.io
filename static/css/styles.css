@@ -35,3 +35,7 @@
     display: inline; /* Show the icons */
   }
 }
+
+.contact-form-max-width {
+  max-width: 800px;
+}
