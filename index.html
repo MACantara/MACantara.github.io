@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Main navigation">
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary" aria-label="Main navigation">
         <div class="container-fluid">
             <nav class="navbar bg-body-tertiary" aria-label="Secondary navigation">
                 <div class="container-fluid">
@@ -35,36 +35,18 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        <a class="nav-link" href="#projects-section">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="#contact-form-section">Contact</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
     <main class="container-fluid mt-5 text-center">
         <!-- Landing Page Section -->
-        <div class="row mb-5 section-height-500">
+        <div id="landing-page-section" class="row mb-5 section-height-500">
             <div class="col-md-6">
                 <img class="profile-image" src="/static/img/michael-angelo-cantara-picture.png" alt="Profile Picture">
             </div>
@@ -82,7 +64,7 @@
         </div>
 
         <!-- Projects Section -->
-        <div class="row">
+        <div id="projects-section" class="row mt-5">
             <div class="col section-height-500 main-section-dark">
                 <h2 class="mt-5">Projects Section</h2>
                 <p>Content for projects section</p>
@@ -90,7 +72,7 @@
         </div>
 
         <!-- Contact Form Section -->
-        <div class="row">
+        <div id="contact-form-section" class="row mt-5">
             <div class="col section-height-500 main-section">
                 <h2 class="mt-5">Contact Form Section</h2>
                 <p>Contact form content</p>
@@ -98,7 +80,7 @@
         </div>
 
         <!-- Footer Section -->
-        <div class="row">
+        <div class="row mt-5">
             <div class="col section-height-500 main-section-dark">
                 <h2 class="mt-5">Footer Section</h2>
                 <p>Footer content</p>
