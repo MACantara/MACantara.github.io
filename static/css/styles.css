@@ -1,0 +1,41 @@
+.section-height-500 {
+    height: 500px;
+}
+
+.main-section {
+  text-align: center;
+}
+
+.main-section-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.profile-image {
+  max-width: 50%;
+  height: auto;
+}
+
+/* For tablets and larger screens */
+@media (min-width: 768px) {
+  .text {
+    display: inline; /* Show the text */
+  }
+  .icons {
+    display: inline; /* Hide the icons */
+  }
+}
+
+/* For mobile and smaller screens */
+@media (max-width: 767px) {
+  .text {
+    display: none; /* Hide the text */
+  }
+  .icons {
+    display: inline; /* Show the icons */
+  }
+}
+
+.contact-form-max-width {
+  max-width: 800px;
+}
