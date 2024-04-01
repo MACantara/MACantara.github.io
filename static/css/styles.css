@@ -39,3 +39,7 @@
 .contact-form-max-width {
   max-width: 800px;
 }
+
+.project-thumbnail {
+  object-fit: fill;
+}
